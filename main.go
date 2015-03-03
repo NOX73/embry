@@ -15,8 +15,9 @@ const (
 	MaxExecutionTime = time.Minute
 	ExpireKeyTime    = 10 * time.Second
 	WorkersCount     = 10
-	MaxNum           = 100010
-	MinNum           = 100000
+	// for factorial calculation
+	MaxNum = 100010
+	MinNum = 100000
 )
 
 type Result struct {
