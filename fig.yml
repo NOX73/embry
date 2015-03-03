@@ -1,8 +1,10 @@
 client:
   build: .
+  environment:
+    - GOMAXPROCS=4
   command: go run main.go
   volumes:
-    - ./:/usr/src/app
+    - .:/go/src/embry
 
   links:
     - memcached1
