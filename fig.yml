@@ -1,0 +1,19 @@
+client:
+  build: .
+  command: go run main.go
+  volumes:
+    - ./:/usr/src/app
+
+  links:
+    - memcached1
+    - memcached2
+    - memcached3
+
+memcached1:
+  image: memcached
+
+memcached2:
+  image: memcached
+
+memcached3:
+  image: memcached
